@@ -8,6 +8,8 @@ import {
 } from "framer-motion";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
+import clsx from "clsx";
 
 export const FloatingNav = ({
   navItems,
@@ -20,6 +22,7 @@ export const FloatingNav = ({
   }[];
   className?: string;
 }) => {
+  const pathname = usePathname();
   return (
     <div
       className={cn(
@@ -31,11 +34,19 @@ export const FloatingNav = ({
         <Link
           key={`link=${idx}`}
           href={navItem.link}
-          className={cn(
-            "relative dark:text-neutral-50 items-center flex space-x-1 text-neutral-500 dark:hover:text-neutral-900 hover:text-neutral-900"
+          className={clsx(
+            "relative dark:text-neutral-50 items-center flex space-x-1 text-neutral-500 dark:hover:text-neutral-900 hover:text-neutral-900",
+            {
+              " text-black": pathname === navItem.link,
+            }
           )}
         >
-          <span className="block sm:hidden">{navItem.icon}</span>
+          <div className="has-tooltip">
+            <span className="tooltip rounded shadow-lg p-1 bg-gray-100 text-sm -mt-8">
+              {navItem.name}
+            </span>
+            <span className="block sm:hidden">{navItem.icon}</span>
+          </div>
           <span className="hidden sm:block text-md">{navItem.name}</span>
         </Link>
       ))}

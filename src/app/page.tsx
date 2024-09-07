@@ -2,11 +2,8 @@ import { Navbar } from "@/components/Navbar";
 export default function Home() {
   return (
     <div>
-      <Navbar />
       <main className=" mt-20 px-12">
-        <div className="mt-10 mb-5 text-5xl font-serif">
-          <div>Timothy Medewase</div>
-        </div>
+        <div className="mt-10 mb-5 text-6xl font-serif ">Timothy Medewase</div>
         <div className="mt-5 mb-5 text-xl ">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
