@@ -5,7 +5,7 @@ export default function Home() {
       <Navbar />
       <main className=" mt-20 px-12">
         <div className="mt-10 mb-5 text-5xl font-serif">
-          <p>Timothy Medewase</p>
+          <div>Timothy Medewase</div>
         </div>
         <div className="mt-5 mb-5 text-xl ">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
