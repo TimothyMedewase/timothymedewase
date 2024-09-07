@@ -1,11 +1,5 @@
 "use client";
 import React, { useState } from "react";
-import {
-  motion,
-  AnimatePresence,
-  useScroll,
-  useMotionValueEvent,
-} from "framer-motion";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -37,7 +31,7 @@ export const FloatingNav = ({
           className={clsx(
             "relative dark:text-neutral-50 items-center flex space-x-1 text-neutral-500 dark:hover:text-neutral-900 hover:text-neutral-900",
             {
-              " text-black": pathname === navItem.link,
+              " text-slate-950": pathname === navItem.link,
             }
           )}
         >
