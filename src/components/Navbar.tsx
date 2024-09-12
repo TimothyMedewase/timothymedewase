@@ -8,6 +8,7 @@ import {
   IconBriefcase2,
   IconFileDescription,
 } from "@tabler/icons-react";
+
 export function Navbar() {
   const navItems = [
     {

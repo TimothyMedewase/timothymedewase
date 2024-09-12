@@ -3,12 +3,12 @@ import React from "react";
 const Resume = () => {
   return (
     <div>
-      <main className=" mt-4 px-12">
-        <div className="flex mt-4 w-auto  max-w-full">
+      <main className="mt-5  ">
+        <div className="flex max-w-fit mx-auto mt-5 ">
           <iframe
             src="Timothy_Medewase_Resume_2025.pdf"
             width="1500 px"
-            height="900 px"
+            height="1100 px"
           />
         </div>
       </main>
