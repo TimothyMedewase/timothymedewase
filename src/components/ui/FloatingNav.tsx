@@ -31,7 +31,7 @@ export const FloatingNav = ({
             key={`link=${idx}`}
             href={navItem.link}
             className={clsx(
-              "relative font-semibold dark:text-neutral-50 items-center flex space-x-1 text-neutral-300 dark:hover:text-neutral-900 hover:text-neutral-900",
+              "relative font-semibold items-center text-neutral-600 dark:text-neutral-300 hover:text-neutral-900 dark:hover:text-neutral-50 transition-colors duration-200",
               {
                 " text-neutral-950": pathname === navItem.link,
               }

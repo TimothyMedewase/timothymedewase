@@ -3,7 +3,7 @@ import React from "react";
 const Resume = () => {
   return (
     <div>
-      <main className="mt-5  ">
+      <main className="mt-10 px-12 ">
         <div className="flex max-w-fit mx-auto mt-5 ">
           <iframe
             src="Timothy_Medewase_Resume_2025.pdf"
