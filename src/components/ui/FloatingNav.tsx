@@ -19,10 +19,10 @@ export const FloatingNav = ({
 }) => {
   const pathname = usePathname();
   return (
-    <div className=" relative flex items-center justify-center">
+    <div className="relative flex items-center justify-center">
       <div
         className={cn(
-          "  flex max-w-full relative mx-auto pr-8 pl-8 py-4 items-center justify-center space-x-8 mt-4",
+          "flex max-w-full relative mx-auto pr-8 pl-8 py-4 items-center justify-center space-x-8 mt-4",
           className
         )}
       >
@@ -33,12 +33,13 @@ export const FloatingNav = ({
             className={clsx(
               "relative font-semibold items-center text-neutral-600 dark:text-neutral-300 hover:text-neutral-900 dark:hover:text-neutral-50 transition-colors duration-200",
               {
-                " text-neutral-950": pathname === navItem.link,
+                "text-neutral-950 dark:text-neutral-50":
+                  pathname === navItem.link,
               }
             )}
           >
             <div className="has-tooltip">
-              <span className="tooltip rounded shadow-lg p-1 bg-gray-100 text-sm -mt-8">
+              <span className="tooltip rounded shadow-lg p-1 bg-gray-100 dark:bg-gray-800 text-sm text-gray-800 dark:text-gray-200 -mt-8">
                 {navItem.name}
               </span>
               <span className="block sm:hidden">{navItem.icon}</span>
