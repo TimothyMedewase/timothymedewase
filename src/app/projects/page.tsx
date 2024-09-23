@@ -1,6 +1,10 @@
 "use client";
 import React from "react";
 import { motion } from "framer-motion";
+import { DataTable } from "@/components/DataTable";
+import { columns } from "./columns";
+import { projectsData } from "./data";
+
 const Projects = () => {
   return (
     <div>
@@ -17,6 +21,9 @@ const Projects = () => {
         <main className=" mt-5 px-12">
           <div className="mt-5 mb-5 font-sans font-bold text-5xl max-w-fit mx-auto">
             Projects
+          </div>
+          <div className="container mx-auto py-10">
+            <DataTable data={projectsData} />
           </div>
         </main>
       </motion.div>
